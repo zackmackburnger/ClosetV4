@@ -1,4 +1,4 @@
-if shared.VapeExecuted then
+	if shared.VapeExecuted then
 	local VERSION = "4.10"..(shared.VapePrivate and " PRIVATE" or "").." "..readfile("vape/commithash.txt"):sub(1, 6)
 	local baseDirectory = (shared.VapePrivate and "vapeprivate/" or "vape/")
 	local vapeAssetTable = {
@@ -27,7 +27,7 @@ if shared.VapeExecuted then
 		["vape/assets/MoreButton1.png"] = "rbxassetid://13350775005",
 		["vape/assets/MoreButton2.png"] = "rbxassetid://13350775731",
 		["vape/assets/MoreButton3.png"] = "rbxassetid://13350776241",
-		["vape/assets/NotificationBackground.png"] = "rbxassetid://14493782148",
+		["vape/assets/NotificationBackground.png"] = "rbxassetid://14526508448",
 		["vape/assets/NotificationBar.png"] = "rbxassetid://13350777235",
 		["vape/assets/OnlineProfilesButton.png"] = "rbxassetid://13350777717",
 		["vape/assets/PencilIcon.png"] = "rbxassetid://13350778187",
@@ -6848,7 +6848,7 @@ if shared.VapeExecuted then
 		icon.Image = downloadVapeAsset(customicon and "vape/"..customicon or "vape/assets/InfoNotification.png")
 		icon.BackgroundTransparency = 1
 		icon.Position = UDim2.new(0, -6, 0, -6)
-		icon.Size = UDim2.new(0, 60, 0, 60)
+		icon.Size = UDim2.new(0, 60, 0, 90)
 		icon.Parent = frame
 		local icon2 = icon:Clone()
 		icon2.ImageColor3 = Color3.new(0, 0, 0)
@@ -6858,7 +6858,7 @@ if shared.VapeExecuted then
 		icon2.Parent = icon
 		local textlabel1 = Instance.new("TextLabel")
 		textlabel1.Font = Enum.Font.GothamBold
-		textlabel1.TextSize = 19
+		textlabel1.TextSize = 17
 		textlabel1.RichText = true
 		textlabel1.TextTransparency = 0.1
 		textlabel1.TextColor3 = Color3.new(1, 1, 1)
